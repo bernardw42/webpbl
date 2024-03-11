@@ -39,10 +39,10 @@ export default function Service() {
   });
 
   return (
-    <div className="bg-[#033C5A] w-full pt-[150px] pb-[200px] flex flex-col justify-center items-center" ref={textRef}>
+    <div className="bg-[#033C5A] w-full pt-[150px] pb-[200px] max-md:pt-[100px] max-md:pb-[150px] flex flex-col justify-center items-center" ref={textRef}>
       <div className="flex flex-col justify-center items-center text-[white]">
-        <h1 className='text-[40px] max-w-7xl px-6 text-center font-semibold'>Layanan Kami</h1>
-        <p className='text-[18px] max-w-7xl px-6 text-center mb-[70px] font-extralight'>Salamat datang di Panca Budi Logistindo! Solusi Logistik Terbaik untuk Anda!</p>
+        <h1 className='text-[40px] max-md:text-[35px] max-w-7xl px-6 text-center font-semibold'>Layanan Kami</h1>
+        <p className='text-[18px] max-md:text-[15px] max-w-7xl px-6 text-center mb-[70px] font-extralight'>Salamat datang di Panca Budi Logistindo! Solusi Logistik Terbaik untuk Anda!</p>
       </div>
       <div className="flex justify-center flex-wrap gap-y-[50px] items-center gap-x-[50px] text-center px-8" ref={cardRef}>
         {CardData.map((CardDetail, index) => (

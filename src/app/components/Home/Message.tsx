@@ -9,11 +9,11 @@ export default function Message({x}:any) {
     });
 
     return (
-        <div className="bg-[#033C5A] w-full pt-[200px] pb-[200px] flex justify-center items-center">
+        <div className="bg-[#033C5A] w-full pt-[200px] pb-[200px] max-lg:pb-[150px] max-lg:pt-[150px] flex justify-center items-center">
            <div className="flex flex-wrap max-lg:flex-col justify-center items-center max-w-7xl gap-x-[50px] gap-y-[70px] px-8">
                 <div className="flex flex-col max-w-[500px] gap-y-[50px]">
-                    <h1 className="text-white text-[40px] font-semibold">Switch to Panca Budi Logistindo now!</h1>
-                    <p className="text-white text-[18px] font-extralight">Panca Budi Logistindo is a logistic & supply chain management solution for businesses across various industries. Supported by technology that can monitor all shipments and product management in real time. Panca Budi Logistindo provides end-to-end services from warehouse management with instant capacity to distribution & delivery management.</p>
+                    <h1 className="text-white text-[40px] max-md:text-[35px] font-semibold">Switch to Panca Budi Logistindo now!</h1>
+                    <p className="text-white text-[18px] max-md:text-[15px]  font-extralight">Panca Budi Logistindo is a logistic & supply chain management solution for businesses across various industries. Supported by technology that can monitor all shipments and product management in real time. Panca Budi Logistindo provides end-to-end services from warehouse management with instant capacity to distribution & delivery management.</p>
                 </div>
                 <div className={`bg-white rounded-2xl w-[600px] max-md:w-[400px] max-sm:w-[300px] h-[600px] flex flex-col justify-between items-center py-10 transition-opacity duration-[2000ms] ${inView ? 'opacity-100' : 'opacity-0'}`} ref={ref}>
                     <h2 className="text-[40px] max-md:text-[32px] tracking-tight font-extrabold text-center text-gray-900 dark:text-white max-w-[500px] px-6">Get in touch with Panca Budi Logistindo</h2>

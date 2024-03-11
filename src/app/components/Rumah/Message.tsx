@@ -9,11 +9,11 @@ export default function Message({x}:any) {
     });
 
     return (
-        <div className="bg-[#033C5A] w-full pt-[200px] pb-[200px] flex justify-center items-center">
+        <div className="bg-[#033C5A] w-full pt-[200px] pb-[200px] max-lg:pb-[150px] max-lg:pt-[150px] flex justify-center items-center">
            <div className="flex flex-wrap max-lg:flex-col justify-center items-center max-w-7xl gap-x-[50px] gap-y-[70px] px-8">
                 <div className="flex flex-col max-w-[500px] gap-y-[50px]">
-                    <h1 className="text-white text-[40px] font-semibold">Beralih ke Panca Budi Logistindo Sekarang!</h1>
-                    <p className="text-white text-[18px] font-extralight">Panca Budi Logistindo adalah solusi manajemen logistik dan rantai pasok untuk bisnis di berbagai industri. Didukung oleh teknologi yang dapat memantau semua pengiriman dan manajemen produk secara real-time Panca Budi Logistindo menyediakan layanan end-to-end mulai dari manajemen gudang hingga manajemen distribusi dan pengiriman.</p>
+                    <h1 className="text-white text-[40px] max-md:text-[35px] font-semibold">Beralih ke Panca Budi Logistindo Sekarang!</h1>
+                    <p className="text-white text-[18px] max-md:text-[15px] font-extralight">Panca Budi Logistindo adalah solusi manajemen logistik dan rantai pasok untuk bisnis di berbagai industri. Didukung oleh teknologi yang dapat memantau semua pengiriman dan manajemen produk secara real-time Panca Budi Logistindo menyediakan layanan end-to-end mulai dari manajemen gudang hingga manajemen distribusi dan pengiriman.</p>
                 </div>
                 <div className={`bg-white rounded-2xl w-[600px] max-md:w-[400px] max-sm:w-[300px] h-[600px] flex flex-col justify-between items-center py-10 transition-opacity duration-[2000ms] ${inView ? 'opacity-100' : 'opacity-0'}`} ref={ref}>
                     <h2 className="text-[40px] max-md:text-[32px] tracking-tight font-extrabold text-center text-gray-900 dark:text-white max-w-[500px] px-6">Hubungi Kami Panca Budi Logistindo</h2>

@@ -33,39 +33,27 @@ import img26 from "../../../../public/home/partner/spons (26).png"
 import img27 from "../../../../public/home/partner/spons (27).png"
 
 
-export default function Credits(){
-    return(
+export default function Credits() {
+    // Array containing all image paths
+    const images = [
+        img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27
+    ];
+
+    return (
         <div className="bg-white w-full flex flex-col items-center justify-center pt-[150px] pb-[200px]">
-            <h1 className="text-[#FF2626] font-semibold text-[40px] max-sm:text-[35px] mb-[70px]">OUR CLIENTS</h1>
+            <h1 className="text-[#FF2626] font-semibold text-[40px] max-md:text-[35px] mb-[70px]">OUR CLIENTS</h1>
             <Marquee pauseOnHover>
-            <Image src={img1} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img2} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img3} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img4} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img5} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img6} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img7} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img8} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img9} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img10} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img11} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img12} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img13} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img14} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img15} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img16} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img17} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img18} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img19} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img20} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img21} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img22} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img23} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img24} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img25} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img26} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
-                    <Image src={img27} alt="img" className="w-[280px] max-sm:w-[250px]"></Image>
+                {images.map((img, index) => (
+                    <Image key={index} src={img} alt={`img${index}`} className="w-[280px] max-md:w-[250px] max-md:mx-[-40px]" />
+                ))}
             </Marquee>
+            <div className="md:hidden pt-[50px]">
+                <Marquee pauseOnHover direction="right">
+                    {images.map((img, index) => (
+                        <Image key={index} src={img} alt={`img${index}`} className="w-[280px] max-md:w-[250px] max-md:mx-[-40px]" />
+                    ))}
+                </Marquee>
+            </div>
         </div>
-    )
+    );
 }

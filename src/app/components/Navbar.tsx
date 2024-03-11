@@ -84,7 +84,7 @@ export default function Header() {
     <header className={`fixed w-full z-30 md:bg-opacity-100 transition duration-300 ease-in-out ${scrolled ? 'bg-white backdrop-blur-sm shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-6 py-1 max-lg:py-2">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="shrink-0 mr-4 z-30">
+          <div className="shrink-0 mr-4 z-10">
             <Link href={`/${lang === 'id' ? 'id' : ''}`}>
               <Image src={scrolled ? Logo : WhiteLogo} alt='tes' className='w-[100px] max-md:w-[70px] drop-shadow-2xl' />
             </Link>
