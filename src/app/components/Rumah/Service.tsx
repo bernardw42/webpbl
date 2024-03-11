@@ -12,19 +12,19 @@ export default function Service() {
 
   const CardData = [
     {
-      title: "Custom Clearance & Document Services",
-      desc: "The import-export and customs clearance services of PBL are integrated with our worldwide operational systems.",
-      image: img3,
-    },
-    {
-      title: "Trucking Services",
-      desc: "PBL handle the movement of goods and materials from one location to another",
+      title: "Pengurusan Bea Cukai & Layanan Dokumen",
+      desc: "Layanan impor-ekspor dan pembersihan bea cukai dari PBL terintegrasi dengan sistem operasional kami secara global.",
       image: img,
     },
     {
-      title: "Eksport & Import",
-      desc: "PBL is responsible for handling customs procedures and ensure compliance with import/export regulations",
+      title: "Layanan Truk",
+      desc: "PBL menangani pergerakan barang dan material dari satu lokasi ke lokasi lainnya.",
       image: img2,
+    },
+    {
+      title: "Ekspor & Impor",
+      desc: "PBL bertanggung jawab untuk menangani prosedur bea cukai dan memastikan kesesuaian terhadap regulasi impor/ekspor.",
+      image: img3,
     },
   ];
 
@@ -41,8 +41,8 @@ export default function Service() {
   return (
     <div className="bg-[#033C5A] w-full pt-[150px] pb-[200px] flex flex-col justify-center items-center" ref={textRef}>
       <div className="flex flex-col justify-center items-center text-[white]">
-        <h1 className='text-[40px] max-w-7xl px-6 text-center font-semibold'>Our Service</h1>
-        <p className='text-[18px] max-w-7xl px-6 text-center mb-[70px] font-extralight'>Welcome to Panca Budi Logistindo! Your ultimate logistical solution provider!</p>
+        <h1 className='text-[40px] max-w-7xl px-6 text-center font-semibold'>Layanan Kami</h1>
+        <p className='text-[18px] max-w-7xl px-6 text-center mb-[70px] font-extralight'>Salamat datang di Panca Budi Logistindo! Solusi Logistik Terbaik untuk Anda!</p>
       </div>
       <div className="flex justify-center flex-wrap gap-y-[50px] items-center gap-x-[50px] text-center px-8" ref={cardRef}>
         {CardData.map((CardDetail, index) => (

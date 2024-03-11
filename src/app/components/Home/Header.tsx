@@ -1,11 +1,9 @@
-
-
 export default function Header() {
 
   return (
     <div className="relative bg-[#033C5A] w-full h-screen overflow-hidden">
       <video className="absolute w-full h-full object-cover bg-fixed opacity-50" autoPlay muted loop>
-        <source src="/home/tes.webm" type="video/webm" />
+        <source src="/home/pbl.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex justify-end max-w-7xl mx-auto items-center text-white px-6">
         <div className="text-right w-[60%] drop-shadow-2xl">

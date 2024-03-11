@@ -14,17 +14,17 @@ export default function Service() {
     {
       title: "Custom Clearance & Document Services",
       desc: "The import-export and customs clearance services of PBL are integrated with our worldwide operational systems.",
-      image: img3,
+      image: img,
     },
     {
       title: "Trucking Services",
       desc: "PBL handle the movement of goods and materials from one location to another",
-      image: img,
+      image: img2,
     },
     {
       title: "Eksport & Import",
       desc: "PBL is responsible for handling customs procedures and ensure compliance with import/export regulations",
-      image: img2,
+      image: img3,
     },
   ];
 
