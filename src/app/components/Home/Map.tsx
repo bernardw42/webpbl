@@ -68,7 +68,6 @@ export default function Map() {
                     )}
                 </Transition>
             </div>
-
         </div>
     );
 }

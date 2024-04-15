@@ -12,6 +12,7 @@ export default function Home() {
         <head>
           <title>Panca Budi Logistindo</title>
         </head>
+        <Navbar></Navbar>
         <Header/>
         <Service/>
         <Map/>

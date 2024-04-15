@@ -26,6 +26,7 @@ export default function Footer({ lang }:any) {
             contact: 'Hubungi Kami',
         },
     };
+    console.log(lang)
 
     // Mapping object for English routes to Indonesian routes
     const routeMapping: Record<string, string> = {

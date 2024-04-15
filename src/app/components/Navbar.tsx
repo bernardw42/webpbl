@@ -93,25 +93,25 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href={generatePath('aboutus', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].about}</Link>
+                <Link href={generatePath('aboutus', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-4 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].about}</Link>
               </li>
               <li>
-                <Link href={generatePath('services', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].services}</Link>
+                <Link href={generatePath('services', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-4 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].services}</Link>
               </li>
               <li>
-                <Link href={generatePath('article', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].article}</Link>
+                <Link href={generatePath('article', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-4 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].article}</Link>
               </li>
               <li>
-                <Link href={generatePath('contactus', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].contact}</Link>
+                <Link href={generatePath('contactus', lang)} className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-4 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>{navbarText[lang].contact}</Link>
               </li>
               <div className='flex flex-wrap items-center px-4'>
                 <Image src={globe} alt='lang' className={`w-[30px] ${scrolled ? 'filter invert' : ''} drop-shadow-2xl`} />
                 <Link href="/" className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-1 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl focus:outline-none`}>
-                  <div onClick={() => handleLangChange('en')}>EN</div>
+                  <div onClick={() => handleLangChange('en')} className='px-1 py-3'>EN</div>
                 </Link>
                 <p className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl`}>|</p>
                 <Link href="/id" className={`font-medium text-[17px] ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-600 px-1 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl focus:outline-none`}>
-                  <div onClick={() => handleLangChange('id')}>ID</div>
+                  <div onClick={() => handleLangChange('id')} className='px-1 py-3'>ID</div>
                 </Link>
               </div>
             </ul>

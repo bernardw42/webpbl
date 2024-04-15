@@ -13,7 +13,7 @@ export default function Service() {
   const CardData = [
     {
       title: "Pengurusan Bea Cukai & Layanan Dokumen",
-      desc: "Layanan impor-ekspor dan pembersihan bea cukai dari PBL terintegrasi dengan sistem operasional kami secara global.",
+      desc: "PBL bertanggung jawab untuk menangani prosedur bea cukai dan memastikan kesesuaian terhadap regulasi impor/ekspor.",
       image: img,
     },
     {
@@ -23,7 +23,7 @@ export default function Service() {
     },
     {
       title: "Ekspor & Impor",
-      desc: "PBL bertanggung jawab untuk menangani prosedur bea cukai dan memastikan kesesuaian terhadap regulasi impor/ekspor.",
+      desc: "Layanan impor-ekspor dan pembersihan bea cukai dari PBL terintegrasi dengan sistem operasional kami secara global",
       image: img3,
     },
   ];

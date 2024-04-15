@@ -136,3 +136,13 @@ export default function Test() {
     </div>
   )
 }
+
+{/* <div className="bg-white w-full pb-[200px] pt-[200px] max-lg:pb-[150px] flex justify-center items-center">
+                <div className="max-w-7xl flex flex-col justify-center items-center gap-y-[150px] px-8">
+                    <h1 className="text-[25px] text-black text-center font-medium py-4">With more than 200,000 SQM warehouse and more than 500 unit vehicles with 7 variants,
+we don't just handle logistics. PBL also help you succeed by combining technology
+with operational excellence.</h1>
+                    <Image src={poin} alt="point" className="w-[1000px]" />
+                    <Image src={card} alt="card" className="w-[1000px]" />
+                </div>
+            </div> */}
